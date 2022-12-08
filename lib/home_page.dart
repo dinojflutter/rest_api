@@ -13,7 +13,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  Future getData() async {
+  Future<List<dynamic>> getData() async {
     const userUrl = "https://reqres.in/api/users";
     try {
       final response = await http.get(Uri.parse(userUrl));
